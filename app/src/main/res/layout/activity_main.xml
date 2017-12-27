@@ -4,13 +4,153 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundApp"
+    android:visibility="visible"
     tools:context="com.example.hamzaakhtar.fitnessapp.MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Username"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="69dp" />
+    <RelativeLayout
+        android:layout_width="395dp"
+        android:layout_height="643dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="102dp"
+            android:layout_weight="1"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:weightSum="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/linearLayout"
+            android:layout_alignStart="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="FITNESS"
+                android:textAlignment="center"
+                android:textColor="@color/buttonCol"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enter Your Credentials"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/editName"
+                style="@style/Widget.AppCompat.AutoCompleteTextView"
+                android:layout_width="274dp"
+                android:layout_height="46dp"
+                android:layout_alignLeft="@+id/editText5"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/editText5"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.03"
+                android:backgroundTint="@android:color/background_light"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:shadowColor="@android:color/background_light"
+                android:textAllCaps="true"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="@android:color/holo_blue_bright"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="107dp" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_alignLeft="@+id/editName"
+                android:layout_alignStart="@+id/editName"
+                android:layout_below="@+id/editName"
+                android:layout_marginTop="11dp"
+                android:backgroundTint="@android:color/background_light"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="@android:color/holo_blue_bright"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="163dp" />
+
+            <EditText
+                android:id="@+id/editPass"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_alignLeft="@+id/editName"
+                android:layout_alignStart="@+id/editName"
+                android:layout_below="@+id/editName"
+                android:layout_marginTop="11dp"
+                android:backgroundTint="@android:color/background_light"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="@android:color/holo_blue_bright"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="163dp" />
+
+            <EditText
+                android:id="@+id/editConfPass"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_alignLeft="@+id/editName"
+                android:layout_alignStart="@+id/editName"
+                android:layout_below="@+id/editName"
+                android:layout_marginTop="11dp"
+                android:backgroundTint="@android:color/background_light"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="@android:color/holo_blue_bright"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="163dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/button4"
+                android:layout_alignBottom="@+id/button4"
+                android:layout_toEndOf="@+id/button4"
+                android:background="@color/buttonCol"
+                android:elevation="15dp"
+                android:text="Register"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="200dp"
+                tools:layout_editor_absoluteY="353dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>
