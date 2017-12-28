@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#3f9bb5</color>
+    <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="backgroundApp">#3068a0</color>
+    <color name="buttonCol">#fcdf00</color>
+    <color name="registerBtn">#0e7ff0</color>
 </resources>
