@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundApp"
+    tools:context="com.example.hamzaakhtar.fitnessapp.WaterCounter">
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="641dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textWaterTrack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_marginTop="37dp"
+            android:elevation="24dp"
+            android:text="Water Intake"
+            android:textAlignment="center"
+            android:textColor="#ffff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="355dp"
+            android:layout_height="582dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/water"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="48dp" />
+
+        <TextView
+            android:id="@+id/textCounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout3"
+            android:layout_marginBottom="145dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="100sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/textIntake"
+            android:layout_alignStart="@+id/textIntake" />
+
+        <TextView
+            android:id="@+id/textIntake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:text="Intake:"
+            android:textAllCaps="false"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Goal:"
+            android:textAllCaps="false"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="20sp"
+            android:layout_alignTop="@+id/textIntake"
+            android:layout_toLeftOf="@+id/textGoalVal"
+            android:layout_toStartOf="@+id/textGoalVal" />
+
+        <TextView
+            android:id="@+id/textIntakeVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textIntake"
+            android:layout_alignBottom="@+id/textIntake"
+            android:layout_marginLeft="9dp"
+            android:layout_marginStart="9dp"
+            android:layout_toEndOf="@+id/textIntake"
+            android:layout_toRightOf="@+id/textIntake"
+            android:text="0 ml"
+            android:textAllCaps="false"
+            android:textColor="@color/buttonCol"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/textGoalVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 ml"
+            android:textAllCaps="false"
+            android:textColor="@color/buttonCol"
+            android:textSize="17sp"
+            android:layout_alignBottom="@+id/textIntakeVal"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_alignEnd="@+id/imageView" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:id="@+id/linearLayout3">
+
+            <ImageButton
+                android:id="@+id/btnPlus"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_alignEnd="@+id/textCounter"
+                android:layout_alignRight="@+id/textCounter"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/round_button"
+                android:elevation="8dp"
+                android:scaleType="fitCenter"
+                android:tint="@color/backgroundApp"
+                app:srcCompat="@android:drawable/ic_input_add" />
+
+            <ImageButton
+                android:id="@+id/btnMinus"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignLeft="@+id/imageView"
+                android:layout_alignStart="@+id/imageView"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/round_button"
+                android:elevation="8dp"
+                android:scaleType="fitCenter"
+                android:tint="@color/backgroundApp"
+                app:srcCompat="@android:drawable/dialog_holo_dark_frame" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
