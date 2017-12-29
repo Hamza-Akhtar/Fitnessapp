@@ -111,9 +111,11 @@
             android:textAllCaps="false"
             android:textColor="@color/buttonCol"
             android:textSize="17sp"
-            android:layout_alignBottom="@+id/textIntakeVal"
+            android:layout_alignBottom="@+id/textGoal"
             android:layout_alignRight="@+id/imageView"
-            android:layout_alignEnd="@+id/imageView" />
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
