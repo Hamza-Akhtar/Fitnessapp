@@ -11,8 +11,7 @@
         android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="4dp">
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
@@ -132,11 +131,25 @@
                     tools:layout_editor_absoluteY="107dp" />
             </TableRow>
 
+            <EditText
+                android:id="@+id/editGender"
+                android:layout_width="135dp"
+                android:layout_height="46dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@android:color/background_light"
+                android:hint="DOB:  D/M/Y"
+                android:shadowColor="@android:color/background_light"
+                android:textAllCaps="true"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="@android:color/holo_blue_bright"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="107dp" />
+
             <!--for extra padding-->
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="10dp"/>
+                android:layout_height="wrap_content" />
 
 
             <Button
