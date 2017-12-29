@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundApp"
+    tools:context="com.example.hamzaakhtar.fitnessapp.UserInfo">
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:text="Information"
+            android:textColor="@color/buttonCol"
+            android:textSize="36dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="Enter your Information"
+            android:textColor="@android:color/background_light"
+            android:textSize="15dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp">
+
+            <EditText
+                android:id="@+id/editFirstName"
+                android:layout_width="135dp"
+                android:layout_height="46dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@android:color/background_light"
+                android:hint="First Name"
+                android:shadowColor="@android:color/background_light"
+                android:textAllCaps="true"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="@android:color/holo_blue_bright"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="107dp" />
+
+            <EditText
+                android:id="@+id/editLastName"
+                android:layout_width="135dp"
+                android:layout_height="46dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@android:color/background_light"
+                android:hint="Last Name"
+                android:shadowColor="@android:color/background_light"
+                android:textAllCaps="true"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="@android:color/holo_blue_bright"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="107dp" />
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/editWeight"
+                    android:layout_width="135dp"
+                    android:layout_height="46dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@android:color/background_light"
+                    android:hint="Weight (lbs)"
+                    android:shadowColor="@android:color/background_light"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/background_light"
+                    android:textColorHint="@android:color/holo_blue_bright"
+                    tools:layout_editor_absoluteX="55dp"
+                    tools:layout_editor_absoluteY="107dp" />
+
+                <EditText
+                    android:id="@+id/editHeight"
+                    android:layout_width="135dp"
+                    android:layout_height="46dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@android:color/background_light"
+                    android:hint="Height (cm)"
+                    android:shadowColor="@android:color/background_light"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/background_light"
+                    android:textColorHint="@android:color/holo_blue_bright"
+                    tools:layout_editor_absoluteX="55dp"
+                    tools:layout_editor_absoluteY="107dp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/editAge"
+                    android:layout_width="135dp"
+                    android:layout_height="46dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@android:color/background_light"
+                    android:hint="Age"
+                    android:shadowColor="@android:color/background_light"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/background_light"
+                    android:textColorHint="@android:color/holo_blue_bright"
+                    tools:layout_editor_absoluteX="55dp"
+                    tools:layout_editor_absoluteY="107dp" />
+
+                <EditText
+                    android:id="@+id/editDOB"
+                    android:layout_width="135dp"
+                    android:layout_height="46dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@android:color/background_light"
+                    android:hint=" DOB:  D/M/Y"
+                    android:shadowColor="@android:color/background_light"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/background_light"
+                    android:textColorHint="@android:color/holo_blue_bright"
+                    tools:layout_editor_absoluteX="55dp"
+                    tools:layout_editor_absoluteY="107dp" />
+            </TableRow>
+
+            <!--for extra padding-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"/>
+
+
+            <Button
+                android:id="@+id/btnContinue"
+                android:layout_width="273dp"
+                android:layout_height="65dp"
+                android:background="@color/buttonCol"
+                android:elevation="8dp"
+                android:text="Continue"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="200dp"
+                tools:layout_editor_absoluteY="353dp" />
+
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
