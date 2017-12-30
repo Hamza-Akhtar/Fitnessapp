@@ -59,7 +59,6 @@ public class register extends AppCompatActivity {
     });
     }
 
-
     private Boolean validateInfo() {
         Boolean valid = false;
 

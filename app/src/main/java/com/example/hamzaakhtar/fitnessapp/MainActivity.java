@@ -13,16 +13,14 @@ import android.widget.Toast;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthException;
 
 
 public class MainActivity extends AppCompatActivity {
 
-
     private EditText email, pass;
-    private com.google.firebase.auth.FirebaseAuth FirebaseAuth;
-
-
+    private FirebaseAuth FirebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

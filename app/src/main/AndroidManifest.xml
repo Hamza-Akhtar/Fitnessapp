@@ -16,8 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".register"></activity>
-        <activity android:name=".UserInfo"></activity>
+        <activity android:name=".register"/>
+        <activity android:name=".WaterCounter" android:exported="true"/>
+        <activity android:name=".UserInfo" android:exported="true"/>
     </application>
 
 </manifest>
