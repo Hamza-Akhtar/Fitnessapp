@@ -10,6 +10,6 @@
         android:id="@+id/navigation_stopwatch"
         android:icon="@drawable/ic_stopwatch"
         android:title="Stopwatch"
-        android:onClick=""/>
+        android:onClick=""/> 
 
 </menu>
