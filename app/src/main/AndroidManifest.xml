@@ -16,9 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".register"/>
-        <activity android:name=".WaterCounter" android:exported="true"/>
-        <activity android:name=".UserInfo" android:exported="true"/>
+        <activity android:name=".register" />
+        <activity
+            android:name=".WaterCounter"
+            android:exported="true" />
+        <activity
+            android:name=".UserInfo"
+            android:exported="true" />
+        <activity
+            android:name=".clock"
+            android:label="@string/title_activity_clock" android:exported="true">
+        </activity>
     </application>
 
 </manifest>
