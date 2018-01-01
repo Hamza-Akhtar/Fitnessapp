@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -53,6 +54,18 @@ public class stopwatch extends Fragment {
     public View onCreateView(LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
 
+
+
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_stopwatch, container, false);
+
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+
         btnStart = (Button) getView().findViewById(R.id.btnStart);
         btnStop = (Button) getView().findViewById(R.id.btnStop);
         btnLap = (Button) getView().findViewById(R.id.btnLap);
@@ -86,9 +99,5 @@ public class stopwatch extends Fragment {
             }
         });
 
-
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_stopwatch, container, false);
     }
-
 }

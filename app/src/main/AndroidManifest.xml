@@ -25,7 +25,11 @@
             android:exported="true" />
         <activity
             android:name=".clock"
-            android:label="@string/title_activity_clock" android:exported="true">
+            android:exported="true"
+            android:label="@string/title_activity_clock"></activity>
+        <activity
+            android:name=".CustomWorkout"
+            android:exported="true">
         </activity>
     </application>
 
