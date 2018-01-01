@@ -69,6 +69,8 @@ public class stopwatch extends Fragment {
         btnStart = (Button) getView().findViewById(R.id.btnStart);
         btnStop = (Button) getView().findViewById(R.id.btnStop);
         btnLap = (Button) getView().findViewById(R.id.btnLap);
+        txtTimer = (TextView) getView().findViewById(R.id.timerVal);
+
 
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,7 +81,6 @@ public class stopwatch extends Fragment {
         });
 
         btnStop.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View view) {
                 timeSwapBuff += timeInMilliseconds;
