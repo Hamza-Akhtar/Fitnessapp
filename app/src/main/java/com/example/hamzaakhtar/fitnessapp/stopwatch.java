@@ -70,6 +70,7 @@ public class stopwatch extends Fragment {
         btnStop = (Button) getView().findViewById(R.id.btnStop);
         btnLap = (Button) getView().findViewById(R.id.btnLap);
         txtTimer = (TextView) getView().findViewById(R.id.timerVal);
+        container = (LinearLayout) getView().findViewById(R.id.container);
 
 
         btnStart.setOnClickListener(new View.OnClickListener() {
@@ -95,6 +96,7 @@ public class stopwatch extends Fragment {
                 LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 View addView = inflater.inflate(R.layout.row,null);
                 TextView txtValue = (TextView) addView.findViewById(R.id.txtContent);
+                txtValue.setText(txtTimer.getText());
                 container.addView(addView);
 
             }
