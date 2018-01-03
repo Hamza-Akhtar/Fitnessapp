@@ -1,6 +1,7 @@
 package com.example.hamzaakhtar.fitnessapp;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -20,10 +21,7 @@ public class clock extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_timer:
                     setTitle("Timer");
-                    timer fragment = new timer();
-                    android.support.v4.app.FragmentTransaction fragmentTransaction1 = getSupportFragmentManager().beginTransaction();
-                    fragmentTransaction1.replace(R.id.fram,fragment,"timer");
-                    fragmentTransaction1.commit();
+                    startActivity(new Intent(clock.this, timer.class));
                     return true;
                 case R.id.navigation_stopwatch:
                     setTitle("Stopwatch");
@@ -46,11 +44,11 @@ public class clock extends AppCompatActivity {
               BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
               navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        setTitle("Timer");
-        timer fragment = new timer();
-        android.support.v4.app.FragmentTransaction fragmentTransaction1 = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction1.replace(R.id.fram,fragment,"timer");
-        fragmentTransaction1.commit();
+        setTitle("Stopwatch");
+        stopwatch fragment2 = new stopwatch();
+        android.support.v4.app.FragmentTransaction fragmentTransaction2 = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction2.replace(R.id.fram,fragment2,"stopwatch");
+        fragmentTransaction2.commit();
 
     }
 
