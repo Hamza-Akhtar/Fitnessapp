@@ -114,7 +114,7 @@ public class timer extends AppCompatActivity {
             int check = Integer.parseInt(toCheck);
             if (check > 100)
                 return -1;
-            return 1;
+            return 1; 
         }
         catch (NumberFormatException e) {
             return -1;
