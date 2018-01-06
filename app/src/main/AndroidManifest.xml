@@ -16,6 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".register" />
         <activity
             android:name=".WaterCounter"
@@ -29,7 +30,8 @@
             android:label="@string/title_activity_clock"></activity>
         <activity
             android:name=".CustomWorkout"
-            android:exported="true">
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan">
         </activity>
         <activity
             android:name=".timer"

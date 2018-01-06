@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#ffff"
+    >
+    <TextView
+        android:id="@+id/headerParent"
+        android:layout_width="match_parent"
+        android:layout_height="81.5dp"
+        android:text ="Day: "
+        android:textColor="@color/backgroundApp"
+        android:textSize="25dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="35dp"
+        />
+
+</LinearLayout>
